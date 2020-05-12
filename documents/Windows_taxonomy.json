@@ -1,0 +1,74 @@
+{ 
+    "fields":[
+    {
+        "name":"Provider Name ",
+        "data_type":"string",
+        "description":"Identifies the provider that logged the event."
+    },
+    {
+        "name":"EventID",
+        "data_type":"string",
+        "description":"The identifier that the provider used to identify the event."
+    },
+    {
+        "name":"Version",
+        "data_type":"string",
+        "description":"Contains the version number of the event's definition."
+    },
+    {
+        "name":"Level",
+        "data_type":"string",
+        "description":"Severity of Event "
+    },
+    {
+        "name":"Task ",
+        "data_type":"string",
+        "description":"The task defined in the event."
+    },
+    {
+        "name":"Opcode",
+        "data_type":"string",
+        "description":"Numeric value that identifies activity application was performing"
+    },
+    {
+        "name":"Keywords",
+        "data_type":"string",
+        "description":"A bitmask of the keywords defined in the event."
+    },
+    {
+        "name":"TimeCreated SystemTime",
+        "data_type":"datetime",
+        "description":"Datetime"
+    },
+    {
+        "name":"Event Record ID",
+        "data_type":"string",
+        "description":"The record number assigned to the event when it was logged."
+    },
+    {
+        "name":"Execution Process ID",
+        "data_type":"string",
+        "description":"Contains information about the process that logged the event."
+    },
+    {
+        "name":"ThreadID",
+        "data_type":"string",
+        "description":"Contains information about the thread that logged the event."
+    },
+    {
+        "name":"Channel",
+        "data_type":"string",
+        "description":"he channel to which the event was logged."
+    },
+    {
+        "name":"Computer",
+        "data_type":"string",
+        "description":"The name of the computer on which the event occurred."
+    },
+    {
+        "name":"EventData",
+        "data_type":"String",
+        "description":"Event Data"
+    }
+]
+}

@@ -1,0 +1,39 @@
+{ 
+    "fields":[
+    {
+        "name":"timestamp",
+        "data_type":"timestamp",
+        "description":"Time request started"
+    },
+    {
+        "name":"localdatabase_username",
+        "data_type":"string",
+        "description":"Originating host"
+    },
+    {
+        "name":"ASA_level_message_number",
+        "data_type":"string",
+        "description":"Syslog message Level"
+    },
+    {
+        "name":"message_text",
+        "data_type":"string",
+        "description":"Contains IP Address, port numbers or usernames"
+    },
+    {
+        "name":"inbound_ip_address",
+        "data_type":"string",
+        "description":"Inbound destination IP Address"
+    },
+    {
+        "name":"outbound_ip_address",
+        "data_type":"string",
+        "description":"Outbound Destination IP Address"
+    },
+    {
+        "name":"access_group",
+        "data_type":"string",
+        "description":"Cisco Access Group"
+    }
+]
+}

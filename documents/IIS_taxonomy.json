@@ -1,0 +1,79 @@
+{ 
+    "fields":[
+    {
+        "name":"date",
+        "data_type":"date",
+        "description":"The date on which the activity occurred."
+    },
+    {
+        "name":"time",
+        "data_type":"time",
+        "description":"The time, in coordinated universal time (UTC), at which the activity occurred."
+    },
+    {
+        "name":"server_IP_address",
+        "data_type":"string",
+        "description":"The IP address of the server on which the log file entry was generated."
+    },
+    {
+        "name":"method",
+        "data_type":"string",
+        "description":"HTTP Method"
+    },
+    {
+        "name":"URI_stem",
+        "data_type":"string",
+        "description":"Target of the action"
+    },
+    {
+        "name":"URI_query",
+        "data_type":"string",
+        "description":"Query Client was trying to perform"
+    },
+    {
+        "name":"server_port",
+        "data_type":"string",
+        "description":"Server Port number configured for the service"
+    },
+    {
+        "name":"authenticated_username",
+        "data_type":"string",
+        "description":"Username who accessed server"
+    },
+    {
+        "name":"client_IP_address",
+        "data_type":"string",
+        "description":"The IP address of the client that made the request"
+    },
+    {
+        "name":"user_agent",
+        "data_type":"string",
+        "description":"Browser Type client used"
+    },
+    {
+        "name":"referrer",
+        "data_type":"string",
+        "description":"Site user last visited"
+    },
+    {
+        "name":"HTTP_status_code",
+        "data_type":"string",
+        "description":"HTTP response status codes indicate whether a specific HTTP request has been successfully completed"
+    },
+    {
+        "name":"protocol_substatus",
+        "data_type":"string",
+        "description":"Sub Status Error Code"
+    },
+    {
+        "name":"windows_status_code",
+        "data_type":"string",
+        "description":"Windows System Code"
+    },
+    {
+        "name":"time_taken",
+        "data_type":"integer",
+        "description":"Time taken to perform Request"
+    }
+]
+}

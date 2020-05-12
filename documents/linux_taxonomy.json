@@ -1,0 +1,39 @@
+{ 
+    "fields":[
+    {
+        "name":"datetime",
+        "data_type":"datetime",
+        "description":"The timestamp field indicates the time and date the message was generated on the system sending the message"
+    },
+    {
+        "name":"host_name",
+        "data_type":"string",
+        "description":"Name of host where message originates from"
+    },
+    {
+        "name":"app-name",
+        "data_type":"string",
+        "description":"The app-name field  indicates the name of the application that sent the message."
+    },
+    {
+        "name":"program_process_number",
+        "data_type":"string",
+        "description":"Process number of program"
+    },
+    {
+        "name":"log_message",
+        "data_type":"string",
+        "description":"Message of log event"
+    },
+    {
+        "name":"client_IP_address",
+        "data_type":"string",
+        "description":"Client IP Address"
+    },
+    {
+        "name":"client_port",
+        "data_type":"string",
+        "description":"Client Port"
+    }
+]
+}

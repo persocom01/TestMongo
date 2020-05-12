@@ -1,0 +1,50 @@
+{ 
+    "fields":[
+
+    {
+        "name":"client_ip_address",
+        "data_type":"string",
+        "description":"This is the IP address of the client (remote host) which made the request to the server"
+    },
+    {
+        "name":"client_id",
+        "data_type":"string",
+        "description":"This information is highly unreliable and should almost never be used except on tightly controlled internal networks. Apache httpd will not even attempt to determine this information unless IdentityCheck is set to On."
+    },
+    {
+        "name":"userID",
+        "data_type":"string",
+        "description":"This is the userid of the person requesting the document as determined by HTTP authentication"
+    },
+    {
+        "name":"timestamp",
+        "data_type":"timestamp",
+        "description":"The time that the request was received"
+    },
+    {
+        "name":"client_request_line",
+        "data_type":"string",
+        "description":"Method Used, Requested Resource, Protocol Used"
+    },
+    {
+        "name":"status_code",
+        "data_type":"string",
+        "description":"This is the status code that the server sends back to the client."
+    },
+    {
+        "name":"object_size",
+        "data_type":"integer",
+        "description":"The last part indicates the size of the object returned to the client, not including the response headers"
+    },
+    {
+        "name":"HTTP_request_header_client _referred_from",
+        "data_type":"string",
+        "description":"The Referer HTTP request header. This gives the site that the client reports having been referred from."
+    },
+    {
+        "name":"HTTP_request_header_client _browser",
+        "data_type":"string",
+        "description":"The User-Agent HTTP request header. This is the identifying information that the client browser reports about itself."
+    }
+]
+}
