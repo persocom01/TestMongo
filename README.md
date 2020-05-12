@@ -3,12 +3,6 @@ A MongoDB testing playground.
 
 ## Installation
 
-The mongodb python driver can be installed via cmd by entering the following:
-
-```
-conda install -c anaconda pymongo
-```
-
 ### Bitnami MongoDB on AWS
 
 1. Spin up an AWS EC2 instance by choosing the appropriate BitNami MongoDB AMI from this list https://bitnami.com/stack/mongodb/cloud/aws/amis
@@ -39,6 +33,12 @@ We also need the application login username and password. To get this, enter the
 
 ```
 cat ./bitnami_credentials
+```
+
+To end the connection, enter:
+
+```
+exit
 ```
 
 ## Issuing commands
