@@ -3,12 +3,6 @@ A MongoDB testing playground.
 
 ## Installation
 
-The mongodb python driver can be installed via cmd by entering the following:
-
-```
-conda install -c anaconda pymongo
-```
-
 ### Bitnami MongoDB on AWS
 
 1. Spin up an AWS EC2 instance by choosing the appropriate BitNami MongoDB AMI from this list https://bitnami.com/stack/mongodb/cloud/aws/amis
@@ -41,6 +35,7 @@ We also need the application login username and password. To get this, enter the
 cat ./bitnami_credentials
 ```
 
+<<<<<<< HEAD
 5. Open port 27017 on AWS.
 
 Adjust the security settings on the AWS server to open up port 27017 for access by python:
@@ -48,6 +43,13 @@ Type: Custom TCP
 Protocol:	TCP
 Port:	27017
 Source: your_ip_and_any_others
+=======
+To end the connection, enter:
+
+```
+exit
+```
+>>>>>>> 0b5bd8ef012f49ff87658aaf0f6bc97a18c7cad5
 
 ## Issuing commands
 
