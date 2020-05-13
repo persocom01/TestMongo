@@ -1,23 +1,33 @@
 import json
 import pymongo as pmg
+import glob
 
+with open(r'.\keys.json') as f:
+    keys = json.load(f)
+
+user = keys['user']
+password = keys['password']
+public_dns = 'ec2-18-136-123-94.ap-southeast-1.compute.amazonaws.com'
 mdb = pmg.MongoClient(
-    'ec2-18-136-123-94.ap-southeast-1.compute.amazonaws.com',
-    27017,
-    ssl=True,
-    ssl_keyfile='./plantx.pem'
+    f'mongodb://{user}:{password}@{public_dns}',
+    27017
 )
 
 db = mdb['taxonomydb']
 col = db['taxonomies']
 
-with open('./documents/Apache_HTTPS_taxonomy.json') as f:
-    file_data = json.load(f)
+# List db names.
+print(mdb.list_database_names())
 
-x = col.insert_one(file_data)
+file_paths = ''
+files = glob.glob(file_paths)
 
-print(x.inserted_id)
-
+# with open('./documents/Apache_HTTPS_taxonomy.json') as f:
+#     file_data = json.load(f)
+#
+# x = col.insert_one(file_data)
+#
+# print(x.inserted_id)
 
 # if pymongo >= 3.0 use insert_one() for inserting one document
 # collection_currency.insert_one(file_data)

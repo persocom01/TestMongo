@@ -41,6 +41,14 @@ We also need the application login username and password. To get this, enter the
 cat ./bitnami_credentials
 ```
 
+5. Open port 27017 on AWS.
+
+Adjust the security settings on the AWS server to open up port 27017 for access by python:
+Type: Custom TCP
+Protocol:	TCP
+Port:	27017
+Source: your_ip_and_any_others
+
 ## Issuing commands
 
 mongo admin is a tool used to manage the mongodb instance. It can be accessed after connecting to the ec2 server and entering:
