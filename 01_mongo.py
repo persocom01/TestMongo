@@ -19,15 +19,18 @@ col = db['taxonomies']
 # List db names.
 print(mdb.list_database_names())
 
-file_paths = ''
+file_paths = './documents/*.json'
 files = glob.glob(file_paths)
 
-# with open('./documents/Apache_HTTPS_taxonomy.json') as f:
-#     file_data = json.load(f)
-#
-# x = col.insert_one(file_data)
-#
-# print(x.inserted_id)
+for file in files:
+    with open(file) as f:
+        file_data = json.load(f)
+        x = col.insert_one(file_data)
+        print(x.inserted_id)
+
+# Delete documents.
+# x = col.delete_many({})
+# print(x.deleted_count, "documents deleted.")
 
 # if pymongo >= 3.0 use insert_one() for inserting one document
 # collection_currency.insert_one(file_data)
